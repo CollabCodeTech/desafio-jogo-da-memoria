@@ -1,0 +1,27 @@
+{
+  "name": "jogo-da-memoria",
+  "version": "1.0.0",
+  "description": "Jogo da memória",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcoBrunoBR/jogo-da-memoria.git"
+  },
+  "keywords": [
+    "jogo",
+    "memoria",
+    "game"
+  ],
+  "author": "Marco Bruno",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/MarcoBrunoBR/jogo-da-memoria/issues"
+  },
+  "homepage": "https://github.com/MarcoBrunoBR/jogo-da-memoria#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
