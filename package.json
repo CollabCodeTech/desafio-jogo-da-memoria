@@ -1,0 +1,27 @@
+{
+  "name": "jogo-da-memoria",
+  "version": "1.0.0",
+  "description": "Jogo da Memória",
+  "main": "index.html",
+  "scripts": {
+    "live-server": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuiiMoraes/Jogo-da-Memoria.git"
+  },
+  "keywords": [
+    "memoria",
+    "jogo",
+    "game"
+  ],
+  "author": "GuiiMoraes <guii.moraes.93@gmail.com>",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/GuiiMoraes/Jogo-da-Memoria/issues"
+  },
+  "homepage": "https://github.com/GuiiMoraes/Jogo-da-Memoria#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
