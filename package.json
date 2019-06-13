@@ -1,0 +1,30 @@
+{
+  "name": "jogo-da-memoria",
+  "version": "1.0.0",
+  "description": "Projeto Jogo da Memória curso CollabCode",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GarciaDFE/jogo-da-memoria.git"
+  },
+  "keywords": [
+    "jogo",
+    "memoria",
+    "game"
+  ],
+  "author": "Marcial Garcia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GarciaDFE/jogo-da-memoria/issues"
+  },
+  "homepage": "https://github.com/GarciaDFE/jogo-da-memoria#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "yup": "^0.27.0"
+  }
+}
