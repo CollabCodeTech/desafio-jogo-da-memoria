@@ -1,0 +1,47 @@
+const game = function() {
+  const $root = document.querySelector("#root");
+
+  const $cardsWrapper = createCardsWrapper();
+  const createMemoryCard = memoryCard.create();
+
+  const $pointBar = pointBar.create();
+  const $btnBack = btnCollabcode.render({ content: "Voltar" });
+  const $layerStart = layerStart.render("Vai");
+
+  const $memoryCardC = createMemoryCard({
+    src: "img/icon-c.png",
+    alt: "Ícone de um livro da linguagem C++"
+  });
+  const $memoryCardJS = createMemoryCard({
+    src: "img/icon-js.png",
+    alt: "Ícone de um livro da linguagem JavaScript"
+  });
+  const $memoryCardJava = createMemoryCard({
+    src: "img/icon-java.png",
+    alt: "Ícone de um livro da linguagem Java"
+  });
+  const $memoryCardWoman = createMemoryCard({
+    src: "img/icon-woman.png",
+    alt: "Ícone de um mina codando"
+  });
+
+  $cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardJS);
+  $cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardJava);
+  $cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardWoman);
+  $cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardC);
+  $cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardJava);
+  $cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardJS);
+  $cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardC);
+  $cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardWoman);
+
+  $root.insertAdjacentHTML("afterbegin", $pointBar);
+  $root.insertAdjacentElement("beforeend", $cardsWrapper);
+  $root.insertAdjacentHTML("beforeend", $btnBack);
+  $root.insertAdjacentHTML("beforeend", $layerStart);
+
+  const $btn = document.querySelector(".btn-collabcode");
+  $btn.addEventListener("click", () => {
+    location.hash = `#/login`;
+    location.reload(true);
+  });
+};

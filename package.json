@@ -1,0 +1,26 @@
+{
+  "name": "jogo-da-memoria",
+  "version": "1.0.0",
+  "description": "Jogo da memória",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server --browser=firefox"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/divetta/jogo-da-memoria.git"
+  },
+  "keywords": [
+    "jogo"
+  ],
+  "author": "Raphael Divetta Bronzo",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/divetta/jogo-da-memoria/issues"
+  },
+  "homepage": "https://github.com/divetta/jogo-da-memoria#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
