@@ -42,10 +42,9 @@ const submitButton = (function() {
     if (emailValue.match(mailFormat)) {
       $msgEmail.classList.remove("-show");
       return true;
-    } else {
-      $msgEmail.classList.add("-show");
-      return false;
     }
+    $msgEmail.classList.add("-show");
+    return false;
   };
 
   module._validaSenha = () => {
@@ -56,10 +55,9 @@ const submitButton = (function() {
     if (numDig >= 8) {
       $msgPass.classList.remove("-show");
       return true;
-    } else {
-      $msgPass.classList.add("-show");
-      return false;
     }
+    $msgPass.classList.add("-show");
+    return false;
   };
 
   module.handleClick = (event, path) => {

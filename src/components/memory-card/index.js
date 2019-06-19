@@ -1,4 +1,4 @@
-const memoryCard = (function () {
+const memoryCard = (function() {
   const module = {};
 
   module.create = () => {
@@ -19,8 +19,7 @@ const memoryCard = (function () {
                 height: 100%;
                 background-color: #f25a70;
                 border-radius: 30px;
-                box-shadow: 0 3px 6px 0 #00000029;
-                position: relative;
+                box-shadow: 0 3px 6px 0 #000029;
                 cursor: pointer;
                 position: absolute;
                 margin-top: 10px;
@@ -98,29 +97,23 @@ const memoryCard = (function () {
       const $activeMemoryCards = document.querySelectorAll(
         ".memory-card.-active"
       );
-      if (
-        $activeMemoryCards[0]
-          .querySelector(".-front .icon")
-          .getAttribute("src") ===
+      if ($activeMemoryCards[0].querySelector(".-front .icon").getAttribute("src") ===
         $activeMemoryCards[1].querySelector(".-front .icon").getAttribute("src")
       ) {
         store.score++;
-
         const $counter = document.querySelector(".point-bar > .number");
         $counter.textContent = store.score * 10;
-
         $activeMemoryCards.forEach($memoryCard => {
           $memoryCard.classList.remove("-active");
           $memoryCard.classList.add("-score");
         });
-      } else {
-        setTimeout(() => {
-          $activeMemoryCards.forEach($memoryCard => {
-            $memoryCard.classList.remove("-active");
-          });
-          qtdeMemoryCardActive = 0;
-        }, 1500);
       }
+      setTimeout(() => {
+        $activeMemoryCards.forEach($memoryCard => {
+          $memoryCard.classList.remove("-active");
+        });
+        qtdeMemoryCardActive = 0;
+      }, 1500);
     }
   };
 

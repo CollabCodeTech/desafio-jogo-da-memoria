@@ -21,7 +21,7 @@ const backBtn = (function() {
             text-decoration: none;
 
             text-align: center;
-            font-family: 'Comfortaa', sans-serife;
+            font-family: 'Comfortaa', sans-serif;
 
             background-color: #fff;
             box-shadow: 0 5px 15px 0 rgba(0,0,0, 0.4);

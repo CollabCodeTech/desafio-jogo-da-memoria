@@ -9,22 +9,17 @@ const flatButton = (function() {
 
     $style.textContent = `
          .flat-button-${module._id} {
-            box-sizing: border-box;
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            width: 50%;
-            height: 176px;
-            padding-bottom: 20px;
+            background-color: ${active ? "#F25A70" : "#EAE6DA"};
+            color: ${active ? "#FFFFFF" : "#FFFCEE"};
             font-size: 24px;
             font-weight: bold;
+            width: 50%;
+            height: 176px;
             text-transform: uppercase;
-            text-align: center;
+            padding-bottom: 20px;
             border: none;
             cursor: pointer;
             letter-spacing: 0.6px;
-            color: ${active ? "#FFFFFF" : "#FFFCEE"};
-            background-color: ${active ? "#F25A70" : "#EAE6DA"};
          }
          .flat-button-${module._id}:hover {
             color: #FFFFFF;
@@ -44,13 +39,10 @@ const flatButton = (function() {
     module._id++;
     module._style(active);
 
-    return `<!--
-         --><button 
-         class="flat-button-${module._id}" 
+    return `<button class="flat-button-${module._id}"
          onclick="flatButton.handleClick('${path}')">
             ${content}
-         </button><!--
-         -->`;
+         </button>`;
   };
 
   return {
