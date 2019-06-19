@@ -1,0 +1,27 @@
+{
+  "name": "jogo-da-memoria",
+  "version": "1.0.0",
+  "description": "Jogo da Memória",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rod94/jogo-da-memoria.git"
+  },
+  "keywords": [
+    "game",
+    "jogo",
+    "memória"
+  ],
+  "author": "Rodolpho Caetano",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/Rod94/jogo-da-memoria/issues"
+  },
+  "homepage": "https://github.com/Rod94/jogo-da-memoria#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
