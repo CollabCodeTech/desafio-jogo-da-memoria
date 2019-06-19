@@ -113,7 +113,7 @@ const memoryCard = (function() {
           $memoryCard.classList.remove("-active");
         });
         qtdeMemoryCardActive = 0;
-      }, 1500);
+      }, 2000);
     }
   };
 

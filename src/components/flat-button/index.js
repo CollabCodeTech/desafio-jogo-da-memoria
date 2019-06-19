@@ -9,17 +9,17 @@ const flatButton = (function() {
 
     $style.textContent = `
          .flat-button-${module._id} {
-            background-color: ${active ? "#F25A70" : "#EAE6DA"};
-            color: ${active ? "#FFFFFF" : "#FFFCEE"};
-            font-size: 24px;
-            font-weight: bold;
             width: 50%;
             height: 176px;
+            font-size: 24px;
+            font-weight: bold;
             text-transform: uppercase;
+            letter-spacing: 0.6px;
+            color: ${active ? "#FFFFFF" : "#FFFCEE"};
+            background-color: ${active ? "#F25A70" : "#EAE6DA"};
             padding-bottom: 20px;
             border: none;
             cursor: pointer;
-            letter-spacing: 0.6px;
          }
          .flat-button-${module._id}:hover {
             color: #FFFFFF;
