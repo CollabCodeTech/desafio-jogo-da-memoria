@@ -89,8 +89,9 @@ const memoryCard = (function() {
   };
 
   module.handleClick = $component => {
-    if ($component.classList.contains("-active") || qtdActiveMemoryCard >= 2)
+    if ($component.classList.contains("-active") || qtdActiveMemoryCard >= 2) {
       return;
+    }
 
     module._activeMemoryCard($component);
     module._verifySelection();

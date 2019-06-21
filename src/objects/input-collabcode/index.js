@@ -45,8 +45,11 @@ const inputCollabcode = (function() {
   module.handleClick = $component => {
     $component.classList.toggle("-active");
     $password = $component.previousSibling.previousSibling;
-    if ($password.type === "password") $password.type = "text";
-    else $password.type = "password";
+    if ($password.type === "password") {
+      $password.type = "text";
+    } else {
+      $password.type = "password";
+    }
   };
 
   return {

@@ -7,8 +7,9 @@ const layerStart = (function() {
   };
 
   module.handleTransitionEnd = (event, $component) => {
-    if (event.target.classList.contains("transparency-layer"))
+    if (event.target.classList.contains("transparency-layer")) {
       $component.remove();
+    }
   };
 
   module.render = content => {

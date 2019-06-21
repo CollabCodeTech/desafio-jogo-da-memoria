@@ -26,14 +26,14 @@ const login = function() {
 
   $email.addEventListener("input", () => {
     if ($email.validity.valid) {
-      $emailError.innerHTML = "";
+      $emailError.textContent = "";
       $emailError.classList.remove("-active");
     }
   });
 
   $password.addEventListener("input", () => {
     if ($password.validity.valid) {
-      $passwordError.innerHTML = "";
+      $passwordError.textContent = "";
       $passwordError.classList.remove("-active");
     }
   });
@@ -48,12 +48,12 @@ const login = function() {
     }
 
     if (!$email.validity.valid) {
-      $emailError.innerHTML = "E-mail inválido!";
+      $emailError.textContent = "E-mail inválido!";
       $emailError.classList.add("-active");
     }
 
     if (!$password.validity.valid) {
-      $passwordError.innerHTML = "Sua senha deve conter 8 caracteres!";
+      $passwordError.textContent = "Sua senha deve conter 8 caracteres!";
       $passwordError.classList.add("-active");
     }
   });
