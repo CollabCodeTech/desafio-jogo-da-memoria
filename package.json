@@ -1,0 +1,25 @@
+{
+  "name": "memory_game",
+  "version": "1.0.0",
+  "main": "index.html",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CristianoMorgante/memory_game.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CristianoMorgante/memory_game/issues"
+  },
+  "homepage": "https://github.com/CristianoMorgante/memory_game#readme",
+  "description": ""
+}
