@@ -1,0 +1,29 @@
+{
+  "name": "jogo-da-memoria",
+  "version": "1.0.0",
+  "description": "Jogo da Memória",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diegoocezar/jogo-da-memoria.git"
+  },
+  "keywords": [
+    "jogo",
+    "memoria",
+    "game",
+    "memory-game",
+    "jogo-da-memoria"
+  ],
+  "author": "Diego Cezar",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/diegoocezar/jogo-da-memoria/issues"
+  },
+  "homepage": "https://github.com/diegoocezar/jogo-da-memoria#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
