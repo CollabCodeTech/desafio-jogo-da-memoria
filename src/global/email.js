@@ -1,28 +1,27 @@
-const validEmail = (function () {
+const email = (function () {
 
     const module = {};
 
-    module.valid = $element => {
-        if (!module._emailTest($element)) {
-            document.querySelector('.input-form.-span').innerHTML = "Email invalido";
+    // Recebe o Email da input
+    module.receive = () => {
+        const email = document.querySelector('input[type="text"]').value;
+        module._check(email);
+    }
+
+    // Checa se o email é valido
+    module._check = (email) => {
+
+        const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+        if (regex.test(email)) {
+            console.log("Email valido");
+        } else {
+            console.log("Email Invalido")
         }
     }
 
-    module.focusEmail = () => {
-        document.querySelector('.input-form.-span').innerHTML = "";
-    }
-
-    module._emailTest = $element => {
-        const email = $element.value;
-        const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
-        const teste = regex.test(email);
-        return teste;
-
-    }
-
     return {
-        valid: module.valid,
-        focusEmail: module.focusEmail
+        receive: module.receive
     }
+
 })();

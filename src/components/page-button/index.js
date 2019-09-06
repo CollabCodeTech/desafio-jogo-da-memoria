@@ -29,8 +29,9 @@ const pageButton = (function () {
 
     module.handleClick = (event, path) => {
         event.preventDefault();
-        window.location.hash = `/${path}`;
-        location.reload(true);
+        email.receive();
+        // window.location.hash = `/${path}`;
+        // location.reload(true);
     }
 
     module.render = (content = "Nome do botão", path = "") => {
