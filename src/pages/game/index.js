@@ -6,7 +6,7 @@ const game = (function () {
     const $cardsWrapper = createCardsWrapper();
 
     // cria o layer e o botão chmando o laye Start com o metodo render.
-    const $layerStart = layerStart.render("Vai");
+    const $layerStart = layerStart.render("Vai", "Voltar", "login");
 
     const createMemoryCard = memoryCard.create();
 

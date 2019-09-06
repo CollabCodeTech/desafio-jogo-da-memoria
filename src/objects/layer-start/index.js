@@ -20,10 +20,10 @@ const layerStart = (function () {
     };
 
     // Cria o botão e a layer
-    module.render = content => {
+    module.render = (gameContent, backContent, pathContent) => {
         const $transparentLayer = transparentLayer.render();
-        const $gameButton = gameButton.render(content);
-        const $backButton = backButton.render("voltar");
+        const $gameButton = gameButton.render(gameContent);
+        const $backButton = backButton.render(backContent, pathContent);
 
         return `
             <div class="layer-start" onclick="layerStart.handleClick(this)" ontransitionend="layerStart.handleTransitionEnd(event, this)">

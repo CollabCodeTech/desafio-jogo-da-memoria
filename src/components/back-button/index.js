@@ -20,25 +20,33 @@ const backButton = (function () {
                 font-weight: bold;
                 text-decoration: underline;
                 letter-spacing: 0.2em;
+                transition: all 300ms linear 
+            }
+
+            .back-button.-disable {
+                opacity: 0;
+                pointer-events: none;
             }
         `;
 
         $head.insertBefore($style, null);
     }
 
-    module._handleClick = () => {
-
+    module.handleClick = (path) => {
+        window.location.hash = path;
+        window.location.reload(true);
     }
 
-    module.render = content => {
+    module.render = (content = "Voltar", path = "login") => {
         module._style();
 
         return `
-            <button class="back-button"><i class="fas fa-chevron-circle-left"></i>${content}</button>
+            <button class="back-button" onClick="backButton.handleClick('#/${path}')"><i class="fas fa-chevron-circle-left"></i>${content}</button>
         `;
     };
 
     return {
-        render: module.render
+        render: module.render,
+        handleClick: module.handleClick
     }
 })();
