@@ -26,12 +26,16 @@ const backButton = (function () {
         $head.insertBefore($style, null);
     }
 
-    module.render = () => {
+    module._handleClick = () => {
+
+    }
+
+    module.render = content => {
         module._style();
 
         return `
-            <button class="back-button"><i class="fas fa-chevron-circle-left"></i>Voltar</button>
-    `;
+            <button class="back-button"><i class="fas fa-chevron-circle-left"></i>${content}</button>
+        `;
     };
 
     return {

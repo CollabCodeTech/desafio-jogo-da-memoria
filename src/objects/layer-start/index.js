@@ -23,7 +23,7 @@ const layerStart = (function () {
     module.render = content => {
         const $transparentLayer = transparentLayer.render();
         const $gameButton = gameButton.render(content);
-        const $backButton = backButton.render();
+        const $backButton = backButton.render("voltar");
 
         return `
             <div class="layer-start" onclick="layerStart.handleClick(this)" ontransitionend="layerStart.handleTransitionEnd(event, this)">
