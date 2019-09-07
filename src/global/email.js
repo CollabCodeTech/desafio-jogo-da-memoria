@@ -5,7 +5,7 @@ const email = (function () {
     // Recebe o Email da input
     module.receive = () => {
         const email = document.querySelector('input[type="text"]').value;
-        module._check(email);
+        return module._check(email);
     }
 
     // Checa se o email é valido
@@ -14,9 +14,10 @@ const email = (function () {
         const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
         if (regex.test(email)) {
-            console.log("Email valido");
+            return `true`;
+            document.querySelector('.validation-text').classList.remove('-active');
         } else {
-            console.log("Email Invalido")
+            document.querySelector('.validation-text').classList.add('-active');
         }
     }
 

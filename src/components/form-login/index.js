@@ -35,15 +35,15 @@ const formLogin = (function () {
             placeholder: "******"
         });
 
+        const $checkEmail = validationText.render('Email Invalido');
         const $eyeCollabcode = eyeCollabcode.render({ attrFor: "password" });
-
         const $linkCollabcode = linkCollabcode.render({ href: "teste", content: "Forget password ?" });
-
         const $pageButton = pageButton.render("login", "game");
 
         return `
             ${$loginLabel}
             ${$loginInput}
+            ${$checkEmail}
             ${$passwordLabel}
             ${$passwordInput}
             ${$eyeCollabcode}
