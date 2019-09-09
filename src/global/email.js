@@ -15,9 +15,9 @@ const email = (function () {
 
         if (regex.test(email)) {
             return `true`;
-            document.querySelector('.validation-text').classList.remove('-active');
+            document.querySelector('.validation-email').classList.remove('-active');
         } else {
-            document.querySelector('.validation-text').classList.add('-active');
+            document.querySelector('.validation-email').classList.add('-active');
         }
     }
 

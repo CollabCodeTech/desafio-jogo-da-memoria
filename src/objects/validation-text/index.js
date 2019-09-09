@@ -2,19 +2,19 @@ const validationText = (function () {
 
     const module = {};
 
-    module._style = () => {
+    module._style = style => {
         const $head = document.querySelector('head');
         const $style = document.createElement('style');
 
         $style.textContent = `
-            .validation-text {
+            .validation-${style} {
                 color: red;
                 font-size: 14px;
                 font-weight: bold;
                 visibility: hidden;
             }
 
-            .validation-text.-active {
+            .validation-${style}.-active {
                 visibility: visible;
             }
         `;
@@ -22,11 +22,11 @@ const validationText = (function () {
         $head.insertBefore($style, null);
     }
 
-    module.render = content => {
-        module._style()
+    module.render = ({style, content}) => {
+        module._style(style)
 
         return `
-            <span class="validation-text">${content}</span>
+            <span class="validation-${style}">${content}</span>
         `
     }
 
