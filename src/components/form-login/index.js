@@ -37,8 +37,13 @@ const formLogin = (function () {
 
         const $checkEmail = validationText.render({
             style: "email",
-            content: "Email Invalido"
+            content: "Invalid email"
             });
+
+        const $checkPassword = validationText.render ({
+            style: "password",
+            content: "Invalid password, minimum 8 digitis"
+        })
 
         const $eyeCollabcode = eyeCollabcode.render({ attrFor: "password" });
         const $linkCollabcode = linkCollabcode.render({ href: "teste", content: "Forget password ?" });
@@ -51,6 +56,7 @@ const formLogin = (function () {
             ${$passwordLabel}
             ${$passwordInput}
             ${$eyeCollabcode}
+            ${$checkPassword}
             ${$linkCollabcode}
             ${$pageButton}
         `;
