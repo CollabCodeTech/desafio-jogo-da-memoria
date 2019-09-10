@@ -4,15 +4,16 @@ const passwd = (function () {
 
     module.receive = () => {
         const password = document.querySelector('#password').value;
-        module._check(password)
+        return module._check(password);
     };
 
     module._check = pass => {
 
-        if (pass.length < 8) {
-            document.querySelector('.validation-password').classList.add('-active');
-        } else {
+        if (pass.length >= 8) {
             document.querySelector('.validation-password').classList.remove('-active');
+            return true;
+        } else {
+            document.querySelector('.validation-password').classList.add('-active');
         }
     }
 

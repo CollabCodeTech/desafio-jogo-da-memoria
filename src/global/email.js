@@ -14,8 +14,8 @@ const email = (function () {
         const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
         if (regex.test(email)) {
-            return `true`;
             document.querySelector('.validation-email').classList.remove('-active');
+            return `true`;
         } else {
             document.querySelector('.validation-email').classList.add('-active');
         }
