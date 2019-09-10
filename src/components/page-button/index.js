@@ -29,6 +29,9 @@ const pageButton = (function () {
 
     module.handleClick = (event, path) => {
         event.preventDefault();
+        email.receive();
+        passwd.receive();
+        
         if (email.receive()) {
             window.location.hash = `/${path}`;
             location.reload(true);

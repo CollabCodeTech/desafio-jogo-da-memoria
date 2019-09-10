@@ -26,7 +26,7 @@ const validationText = (function () {
         module._style(style)
 
         return `
-            <span class="validation-${style} -active">${content}</span>
+            <span class="validation-${style}">${content}</span>
         `
     }
 
