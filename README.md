@@ -16,6 +16,4 @@
 --- Criado o script passwd.js que valida a Senha
 --- Colocado a chamada do script passwd.js no page-button e inserido este na regra de login quando a senha for valida.
 
-# Veficação de email no signup
---- Inserido a verificação de email na pagina de signup.
 
