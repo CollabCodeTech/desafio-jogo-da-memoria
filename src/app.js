@@ -17,6 +17,8 @@
     //     paths["#/404"]();
     // }
 
+
+    // Função aplicado ao navegador que executa reload ao trocar o hash da pagina
     window.onhashchange = () => {
         location.reload(true);
     }

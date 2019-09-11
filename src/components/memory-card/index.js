@@ -91,13 +91,13 @@ const memoryCard = (function () {
     }
 
     module._activeMemoryCard = $component => {
-        if (qtdActiveMemoryCard < 2) {
+        if (activeMemoryCard.qtd < 2) {
             $component.classList.add('-active');
         }
     }
 
     module._checkSure = () => {
-        if (qtdActiveMemoryCard === 1) {
+        if (activeMemoryCard.qtd === 1) {
             const $activeMemoryCards = document.querySelectorAll('.memory-card.-active');
             const $pointBarNumber = document.querySelector('.point-bar > .number');
 
@@ -119,7 +119,7 @@ const memoryCard = (function () {
                         memoryCard.classList.remove("-active");
                     });
 
-                    qtdActiveMemoryCard = 0;
+                    activeMemoryCard.qtd = 0;
 
                 }, 1500);
             }
