@@ -17,4 +17,12 @@
     //     paths["#/404"]();
     // }
 
+    window.onhashchange = () => {
+        location.reload(true);
+    }
+
+    // window.addEventListener('hashchange', () => {
+    //     location.reload(true);
+    // }, false);
+
 })();

@@ -28,6 +28,7 @@ const pageButton = (function () {
     };
 
     module.handleClick = (event, path) => {
+        console.log(event);
         event.preventDefault();
         
         if (email.receive()) {
