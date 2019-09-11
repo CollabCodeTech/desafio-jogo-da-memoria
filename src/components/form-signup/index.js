@@ -35,11 +35,6 @@ const formSignup = (function () {
             placeholder: "example@email.com",
         });
 
-        const $checkEmail = validationText.render({
-            style: "email",
-            content: "Invalid Email"
-        })
-
         const $passwordLabel = labelCollabcode.render("Password")
 
         const $passwordInput = createInput({
@@ -64,7 +59,6 @@ const formSignup = (function () {
 
             ${$emailLabel}
             ${$emailInput}
-            ${$checkEmail}
 
             ${$passwordLabel}
             ${$passwordInput}
