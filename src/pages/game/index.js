@@ -27,14 +27,41 @@ const game = (function () {
         alt: "livro de programação JAVA"
     });
 
-    $cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardC);
-    $cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardJS);
-    $cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardPHP);
-    $cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardJava);
-    $cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardJS);
-    $cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardC);
-    $cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardJava);
-    $cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardPHP);
+    function rand0n() {
+        return (Math.round(Math.random())-0.5);
+    }
+
+    const insertCard = [];
+    insertCard[0] = $memoryCardC;
+    insertCard[1] = $memoryCardC;
+    insertCard[2] = $memoryCardJS;
+    insertCard[3] = $memoryCardJS;
+    insertCard[4] = $memoryCardJava;
+    insertCard[5] = $memoryCardJava;
+    insertCard[6] = $memoryCardPHP;
+    insertCard[7] = $memoryCardPHP;
+
+    insertCard.sort(rand0n);
+
+    // const totalInsert = insertCard.length;
+
+    // for (i=0; i<totalInsert; i++) {
+    //     $cardsWrapper.insertAdjacentHTML("beforeend", insertCard[i]);
+    // }
+
+    insertCard.forEach(element => {
+        $cardsWrapper.insertAdjacentHTML("beforeend", element);
+    });
+
+
+    // $cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardC);
+    // $cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardJS);
+    // $cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardPHP);
+    // $cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardJava);
+    // $cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardJS);
+    // $cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardC);
+    // $cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardJava);
+    // $cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardPHP);
 
     $root.insertAdjacentElement("beforeend", $cardsWrapper);
     $root.insertAdjacentHTML("afterbegin", $pointBar);
