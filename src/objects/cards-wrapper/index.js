@@ -1,4 +1,4 @@
-const createCardsWrapper = (function () {
+const cardsWrapper = (function () {
     
     const module = {};
 

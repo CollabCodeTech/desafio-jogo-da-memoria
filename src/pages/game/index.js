@@ -3,8 +3,7 @@ const game = (function () {
 
     // Cria a barra de pontos com o metodo create
     const $pointBar = pointBar.create();
-    // const $cardsWrapper = createCardsWrapper();
-    const $cardsWrapper = createCardsWrapper.create();
+    const $cardsWrapper = cardsWrapper.create();
 
     // cria o layer e o botão chmando o laye Start com o metodo render.
     const $layerStart = layerStart.render("Vai", "Voltar", "login");
