@@ -15,5 +15,8 @@
 --- Inserido a mensagem no formulario de login form-login
 --- Criado o script passwd.js que valida a Senha
 --- Colocado a chamada do script passwd.js no page-button e inserido este na regra de login quando a senha for valida.
+---
 
+--- Refatorado o cards-wrapper e inserido a IIFE
+--- Retirado a variavel global do cads-wrapper e colocado em arquivo especifico na pasta global
 
