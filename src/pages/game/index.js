@@ -49,8 +49,8 @@ const game = (function () {
     //     $cardsWrapper.insertAdjacentHTML("beforeend", insertCard[i]);
     // }
 
-    insertCard.forEach(element => {
-        $cardsWrapper.insertAdjacentHTML("beforeend", element);
+    insertCard.forEach($element => {
+        $cardsWrapper.insertAdjacentHTML("beforeend", $element);
     });
 
 
