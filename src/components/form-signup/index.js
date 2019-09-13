@@ -8,7 +8,10 @@ const formSignup = (function () {
 
         $style.textContent = `
             .form-signup {
-                padding: 0 35px 40px;
+                width: 50%;
+                margin: 0 auto;
+                padding: 0 34px 40px;
+                transform: translateY(-30px);
             }
         `;
 

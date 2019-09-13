@@ -8,7 +8,10 @@ const formLogin = (function () {
 
         $style.textContent = `
             .form-login {
+                width: 50%;
+                margin: 0 auto;
                 padding: 0 34px 40px;
+                transform: translateY(-30px);
             }
         `
 
