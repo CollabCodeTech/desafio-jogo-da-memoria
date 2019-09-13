@@ -4,6 +4,7 @@ const game = (function () {
     // Cria a barra de pontos com o metodo create
     const $pointBar = pointBar.create();
     const $cardsWrapper = cardsWrapper.create();
+    const $layerEnd = layerEnd.render();
 
     // cria o layer e o botão chmando o laye Start com o metodo render.
     const $layerStart = layerStart.render("Vai", "Voltar", "login");
@@ -66,5 +67,7 @@ const game = (function () {
     $root.insertAdjacentElement("beforeend", $cardsWrapper);
     $root.insertAdjacentHTML("afterbegin", $pointBar);
     $root.insertAdjacentHTML("beforeend", $layerStart);
+    $root.insertAdjacentHTML("beforeend", $layerEnd);
+    
 
 });
