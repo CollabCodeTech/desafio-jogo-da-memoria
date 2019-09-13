@@ -37,7 +37,7 @@ const backButton = (function () {
         window.location.reload(true);
     }
 
-    module.render = (content = "Voltar", path = "login") => {
+    module.render = (content = "Logout", path = "login") => {
         module._style();
 
         return `

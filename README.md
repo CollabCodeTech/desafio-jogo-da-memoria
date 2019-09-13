@@ -20,4 +20,5 @@
 --- Refatorado o cards-wrapper e inserido a IIFE
 --- Retirado a variavel global do cads-wrapper e colocado em arquivo especifico na pasta global
 --- Inserido a função de embaralhamento de cards ao iniciar o Game.
+--- inserido pagina de fim de game.
 

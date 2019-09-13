@@ -105,6 +105,7 @@ const memoryCard = (function () {
                 $activeMemoryCards[1].querySelector('.-front .icon').getAttribute('src')) {
 
                 store.score++;
+                module._endGame();
                 document.querySelector('.point-bar > .number').textContent = store.score;
 
                 $activeMemoryCards.forEach($memoryCard => {
@@ -120,10 +121,15 @@ const memoryCard = (function () {
                     });
 
                     activeMemoryCard.qtd = 0;
-
+                    
                 }, 1500);
             }
         }
+    }
+
+    module._endGame = () => {
+        const $layerEnd = document.querySelector('.layer-end');
+        store.score === 4 ? $layerEnd.classList.add('-active') : $layerEnd.classList.remove('-active')
     }
 
     return {

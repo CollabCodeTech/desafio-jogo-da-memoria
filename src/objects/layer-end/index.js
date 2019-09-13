@@ -26,16 +26,35 @@ const layerEnd = (function() {
             .layer-end > .image {
                 width: 25vw;    
             }
+
+            .layer-end > .button {
+                    position: absolute;
+                    top: 0.5em;
+                    left: 10em;
+                    padding: 5px;
+                    cursor: pointer;
+                    background-color: #2ed573;
+                    border: 1px solid #fffecc;
+                    border-radius: 10px;
+                    color: #FFF;
+                    font-weight: bold;
+                    text-decoration: underline;
+                    letter-spacing: 0.2em;
+                    transition: all 300ms linear 
+            }
         `;
 
         $head.insertBefore($style, null);
     }
 
     module.render = () => {
+        const $backButton = backButton.render("Logout");
         module._style();
 
         return `<div class="layer-end">
                     <img class="image" src="../img/you-win.jpg">
+                    <button class="button" onclick="location.reload(true)">Restart game</button>
+                    ${$backButton}
                 </div>`
     };
 

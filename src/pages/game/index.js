@@ -7,7 +7,7 @@ const game = (function () {
     const $layerEnd = layerEnd.render();
 
     // cria o layer e o botão chmando o laye Start com o metodo render.
-    const $layerStart = layerStart.render("Vai", "Voltar", "login");
+    const $layerStart = layerStart.render("Vai", "Logout", "login");
 
     const createMemoryCard = memoryCard.create();
 
