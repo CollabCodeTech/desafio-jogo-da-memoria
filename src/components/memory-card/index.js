@@ -99,14 +99,15 @@ const memoryCard = (function () {
     module._checkSure = () => {
         if (activeMemoryCard.qtd === 1) {
             const $activeMemoryCards = document.querySelectorAll('.memory-card.-active');
-            const $pointBarNumber = document.querySelector('.point-bar > .number');
-
+            const $pointBarHit = document.querySelector('.point-bar > .number-hit');
+            const $pointBarMiss = document.querySelector('.point-bar > .number-miss');
+            
             if ($activeMemoryCards[0].querySelector('.-front .icon').getAttribute('src') ===
                 $activeMemoryCards[1].querySelector('.-front .icon').getAttribute('src')) {
 
                 store.score++;
                 module._endGame();
-                document.querySelector('.point-bar > .number').textContent = store.score;
+                $pointBarHit.textContent = `Acertos: ${store.score}`;
 
                 $activeMemoryCards.forEach($memoryCard => {
                     $memoryCard.classList.remove('-active');
@@ -114,7 +115,9 @@ const memoryCard = (function () {
                 });
 
             } else {
-
+                store.misses++;
+                $pointBarMiss.textContent = `Erros: ${store.misses}`;
+                
                 setTimeout(() => {
                     $activeMemoryCards.forEach(memoryCard => {
                         memoryCard.classList.remove("-active");
@@ -129,7 +132,7 @@ const memoryCard = (function () {
 
     module._endGame = () => {
         const $layerEnd = document.querySelector('.layer-end');
-        store.score === 4 ? $layerEnd.classList.add('-active') : $layerEnd.classList.remove('-active')
+        store.score === store.total ? $layerEnd.classList.add('-active') : $layerEnd.classList.remove('-active')
     }
 
     return {

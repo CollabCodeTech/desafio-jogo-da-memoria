@@ -13,7 +13,7 @@ const pointBar = (function () {
                 font-family: "comfortaa", sans-serif;
             }
 
-            .point-bar > .number {
+            .point-bar > .number-hit, .point-bar > .number-miss {
                 color: #FFF;
                 line-height: 40px;
                 font-weight: bold;
@@ -28,7 +28,9 @@ const pointBar = (function () {
 
         return `
             <header class="point-bar">
-                <span class="number">0</span>
+                <span class="number-hit">Acertos: 0</span>
+                <span class="number-hit">/</span>
+                <span class="number-miss">Erros: 0</span>
             </header>
         `;
     };

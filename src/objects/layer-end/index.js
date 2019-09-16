@@ -9,11 +9,11 @@ const layerEnd = (function() {
             .layer-end {
                 box-sizing: border-box;
                 position: absolute;
-                top: 0;
+                top: 5%;
                 z-index: 9999;
                 background: #fff;
                 width: 100vw;
-                height: 100vh;
+                height: 80vh;
                 text-align: center;
                 padding-top: 200px;
                 display: none;

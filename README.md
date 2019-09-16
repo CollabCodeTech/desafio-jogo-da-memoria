@@ -21,4 +21,8 @@
 --- Retirado a variavel global do cads-wrapper e colocado em arquivo especifico na pasta global
 --- Inserido a função de embaralhamento de cards ao iniciar o Game.
 --- inserido pagina de fim de game.
+--- Ajustado para versão Desktop
+--- Inserido mais cards ao game.
+--- Inserido a contagem de erros
+--- Ajustado o layout para desktop.
 

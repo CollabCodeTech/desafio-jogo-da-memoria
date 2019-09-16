@@ -27,6 +27,31 @@ const game = (function () {
         src: "img/icon-java.png",
         alt: "livro de programação JAVA"
     });
+    const $memoryCardBug = createMemoryCard({
+        src: "img/icon-bug.png",
+        alt: "Icone de Bug"
+    });
+    const $memoryCardCabeca = createMemoryCard({
+        src: "img/icon-cabeca.png",
+        alt: "Icone da cabeça"
+    });
+    const $memoryCardCelular = createMemoryCard({
+        src: "img/icon-celular.png",
+        alt: "Icone da celular"
+    });
+    const $memoryCardResponsivel = createMemoryCard({
+        src: "img/icon-responsivo.png",
+        alt: "Icone da Responsivel"
+    });
+    const $memoryCardSettings = createMemoryCard({
+        src: "img/icon-Settings.png",
+        alt: "Icone da Settings"
+    });
+    const $memoryCardWoman = createMemoryCard({
+        src: "img/icon-Woman.png",
+        alt: "Icone da Woman"
+    });
+    
 
     function rand0n() {
         return (Math.round(Math.random())-0.5);
@@ -34,13 +59,25 @@ const game = (function () {
 
     const insertCard = [];
     insertCard[0] = $memoryCardC;
-    insertCard[1] = $memoryCardC;
-    insertCard[2] = $memoryCardJS;
-    insertCard[3] = $memoryCardJS;
-    insertCard[4] = $memoryCardJava;
-    insertCard[5] = $memoryCardJava;
-    insertCard[6] = $memoryCardPHP;
-    insertCard[7] = $memoryCardPHP;
+    insertCard[1] = $memoryCardJS;
+    insertCard[2] = $memoryCardJava;
+    insertCard[3] = $memoryCardPHP;
+    insertCard[4] = $memoryCardBug;
+    insertCard[5] = $memoryCardCabeca;
+    insertCard[6] = $memoryCardCelular;
+    insertCard[7] = $memoryCardResponsivel;
+    insertCard[8] = $memoryCardSettings;
+    insertCard[9] = $memoryCardWoman;
+    insertCard[10] = $memoryCardC;
+    insertCard[11] = $memoryCardJS;
+    insertCard[12] = $memoryCardJava;
+    insertCard[13] = $memoryCardPHP;
+    insertCard[14] = $memoryCardBug;
+    insertCard[15] = $memoryCardCabeca;
+    insertCard[16] = $memoryCardCelular;
+    insertCard[17] = $memoryCardResponsivel;
+    insertCard[18] = $memoryCardSettings;
+    insertCard[19] = $memoryCardWoman;
 
     insertCard.sort(rand0n);
 
