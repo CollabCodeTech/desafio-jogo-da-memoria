@@ -52,7 +52,7 @@ const layerEnd = (function() {
         module._style();
 
         return `<div class="layer-end">
-                    <img class="image" src="../img/you-win.jpg">
+                    <img class="image" src="img/you-win.jpg">
                     <button class="button" onclick="location.reload(true)">Restart game</button>
                     ${$backButton}
                 </div>`
