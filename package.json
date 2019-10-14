@@ -1,0 +1,28 @@
+{
+  "name": "memory-game",
+  "version": "1.0.0",
+  "description": "Jogo da Memória",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camila-becker/memory-game.git"
+  },
+  "keywords": [
+    "jogo",
+    "memoria",
+    "game"
+  ],
+  "author": "Camila Becker",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/camila-becker/memory-game/issues"
+  },
+  "homepage": "https://github.com/camila-becker/memory-game#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
