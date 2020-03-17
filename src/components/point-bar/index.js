@@ -14,7 +14,7 @@ const pointBar = (function() {
           position: relative;
           color: #fff;
           background-color: #3a4042;
-  
+          top: -4px;
         }
         .count {
           display: flex;
@@ -36,12 +36,13 @@ const pointBar = (function() {
         }
 
         .layer-button {
-          width: 65px;
+          width: 140px;
           height: 65px;
           display: block;
           position: relative;
           background-color: #d4d4d4;
-          border-radius: 50%;
+          border-radius: 30px;
+          top: 10px;
           
         }
     `;
@@ -51,6 +52,7 @@ const pointBar = (function() {
 
   module.create = () => {
     const $resetButton = resetButton.render();
+    const $exitButton = exitButton.render();
     module._style();
     return `
       <header class="pointBar">
@@ -59,7 +61,8 @@ const pointBar = (function() {
           <span class="numbers -point">0</span>
         </div>
         <div class="layer-button">          
-          ${$resetButton}        
+          ${$resetButton}
+          ${$exitButton}     
         </div>
         <div class="count -attempt">
           <h3 class="lable">Jogadas</h3>

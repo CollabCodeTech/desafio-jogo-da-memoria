@@ -4,36 +4,33 @@ const startButton = (function() {
     const $head = document.querySelector("head");
     const $style = document.createElement("style");
     $style.textContent = `
-    .start-button {
-      width: 100px;
-      height: 100px;
-      display: block;
-      position: relative;        
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-
+        
     .button${store.buttonId} {
       width: 90px;
       height: 90px;
-      border: 4px solid #fffcee;
+      display: block;
+      position: relative;        
       border-radius: 50%;
-      font-size: 1.5em;
-      box-shadow: 0 0 6px 5px rgba(0, 0, 0, 0.5);
+      font-size: 1.2em;
+      box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
       background: #3a4042;
+      margin: 3px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
     `;
     $head.insertBefore($style, null);
   };
   module.render = () => {
-    const $buttonStart = gameButton.render("start");
+    const $buttonStart = gameButton.render({
+      component: "Start",
+      onClick: "startButton.handleClick(this)"
+    });
     module._style();
-    return `
-      <div class="start-button" onClick="startButton.handleClick(this)">
+    return `      
       ${$buttonStart}
-      </div>
-  `;
+      `;
   };
 
   module.handleClick = () => {

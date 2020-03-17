@@ -14,6 +14,9 @@ const loginForm = (function() {
         transform: translateX(-50%);
         overflow: hidden;
       }
+      .login-form .eye-password {
+        top: -16%;
+      }
       `;
     $head.insertBefore($style, null);
   };
@@ -47,7 +50,8 @@ const loginForm = (function() {
       placeHolder: "Abcd@123"
     });
 
-    const $eyepassword = eyePassword().render({ attrFor: "password" });
+    const $eyepassword = eyePassword.render({ attrFor: "password" });
+
     return {
       labelName: $labelNome,
       inputName: $inputNome,
@@ -65,14 +69,13 @@ const loginForm = (function() {
     module._style();
 
     return `      
-      <form class="login-form" action="" metod="" >
+      <form id="login-form" class="login-form" action="" metod="GET" >
       ${module._children().labelEmail}
       ${module._children().inputEmail}
       ${module._children().labelPassword}
       ${module._children().inputPassword} 
-      ${module._children().eyePassword}       
-      </form>
-      
+      ${module._children().eyePassword}
+      </form>      
     `;
   };
 

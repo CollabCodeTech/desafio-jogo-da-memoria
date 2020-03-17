@@ -21,7 +21,7 @@ const layerLogin = (function() {
       }
       .wrapper-login {
         width: 100%;
-        height: 40%;
+        height: 42%;
         display: flex;
         flex-wrap: wrap;
         overflow: hidden;
@@ -89,6 +89,9 @@ const layerLogin = (function() {
       button: $loginButton
     };
   };
+  module.handleClick = () => {
+    location.hash = "/signup";
+  };
 
   module.render = () => {
     module._style();
@@ -105,11 +108,12 @@ const layerLogin = (function() {
           </div>
         </div>
         ${module._children().button}        
-        <a href="#/signup" class="singup-link">Cadastrar</a>
+        <a href="#/signup" onClick="layerLogin.handleClick(this)" class="singup-link">Cadastrar</a>
         </div>
         `;
   };
   return {
-    render: module.render
+    render: module.render,
+    handleClick: module.handleClick
   };
 })();

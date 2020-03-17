@@ -8,15 +8,14 @@ function createCardWrapper() {
   $style.textContent = `
   .wrapper-cards {
     width: 350px;
-    height: 100vh;
+    height: 90vh;
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    border-radius: 30px;
     background-color: #d4d4d4;
     justify-content: space-around;
     align-items: center;
-    margin: auto;
+    margin: 50px auto;
     overflow: hidden;
   }
   `;

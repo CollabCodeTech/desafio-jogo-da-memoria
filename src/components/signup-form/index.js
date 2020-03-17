@@ -43,7 +43,7 @@ const signupForm = function() {
       type: "password",
       placeHolder: "Abcd@123"
     });
-    const $eyePassword = eyePassword().render({ attrFor: "password" });
+    const $eyePassword = eyePassword.render({ attrFor: "password" });
 
     const $labelRepetPassword = gameLabel.render("Repetir Senha");
     const $inputRepetPassword = gameInput.render({
@@ -52,7 +52,7 @@ const signupForm = function() {
       placeHolder: "Abcd@123"
     });
 
-    const $eyePassRepet = eyePassword().render({ attrFor: "repetPassword" });
+    const $eyePassRepet = eyePassword.render({ attrFor: "repetPassword" });
 
     return {
       labelName: $labelNome,

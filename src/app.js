@@ -1,17 +1,21 @@
 (function() {
-  const { hash } = window.location;
+  const { hash } = location;
 
   const paths = [];
   paths[""] = login;
+  paths["#/login"] = login;
   paths["#/signup"] = signup;
   paths["#/game"] = game;
+  paths["#/404"] = page404;
+
+  if (paths[hash] === undefined) {
+    paths["#/404"]();
+    return;
+  }
 
   paths[hash]();
-  // if (hash === "#/signup") {
-  //   signup();
-  // } else if (hash === "#/game") {
-  //   game();
-  // } else {
-  //   login();
-  // }
+
+  window.onpopstate = () => {
+    location.reload(true);
+  };
 })();

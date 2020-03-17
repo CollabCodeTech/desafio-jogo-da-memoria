@@ -25,11 +25,11 @@ const gameButton = (function() {
 
     $head.insertBefore($style, null);
   };
-  module.render = $component => {
+  module.render = ({ component = "Enviar", type = "", onClick = "" }) => {
     store.buttonId--;
     module._style();
     return `
-        <button class="button${store.buttonId}">${$component}</button>
+        <button class="button${store.buttonId}" onClick="${onClick}" type="${type}" >${component}</button>
       `;
   };
 

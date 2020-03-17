@@ -6,7 +6,7 @@ const gameLabel = (function() {
     $style.textContent = `
       .label {
         color: #fffcee;
-        margin: 5px;
+        margin: 10px;
 
       }
     `;

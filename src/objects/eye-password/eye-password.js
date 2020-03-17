@@ -1,4 +1,4 @@
-const eyePassword = function() {
+const eyePassword = (function() {
   module = {};
   module._style = () => {
     const $head = document.querySelector("head");
@@ -32,7 +32,6 @@ const eyePassword = function() {
     const $getInput = document.querySelector(`#${$attrFor}`);
 
     this.classList.toggle("-active");
-    console.log(this);
 
     if ($getInput.getAttribute("type") === "text") {
       $getInput.setAttribute("type", "password");
@@ -55,4 +54,4 @@ const eyePassword = function() {
     render: module.render,
     handleClick: module.handleClick
   };
-};
+})();
