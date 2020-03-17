@@ -1,0 +1,27 @@
+{
+  "name": "jogo-da-memoria",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "yup": "^0.27.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lfsaraceno/jogo-da-memoria.git"
+  },
+  "keywords": [
+    "game"
+  ],
+  "author": "",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/lfsaraceno/jogo-da-memoria/issues"
+  },
+  "homepage": "https://github.com/lfsaraceno/jogo-da-memoria#readme"
+}
