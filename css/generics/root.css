@@ -1,0 +1,13 @@
+#root {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background: #3a4042;
+  font-family: "comfortaa", sans-serif;
+}
+
+input,
+button {
+  font-family: inherit;
+  border: none;
+}
