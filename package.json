@@ -1,0 +1,25 @@
+{
+  "name": "jogo-da-memoria",
+  "version": "1.0.0",
+  "description": "Projeto de estudo do curso (do front ao end)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milafrn/jogo-da-memoria.git"
+  },
+  "author": "Mila",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/milafrn/jogo-da-memoria/issues"
+  },
+  "homepage": "https://github.com/milafrn/jogo-da-memoria#readme",
+  "dependencies": {
+    "yup": "^0.28.5"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
